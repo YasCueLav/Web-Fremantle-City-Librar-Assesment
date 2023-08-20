@@ -169,9 +169,7 @@ body {
 
 /* Body */
 #main-container {
-    /* height: 600px; */
-    /* overflow: auto; */
-    display: flex;
+    overflow: auto;
 }
 
 .vertical-bar {
@@ -225,11 +223,6 @@ body {
     color: var(--third-color);
 }
 
-.last {
-    border: 0;
-    margin-bottom: 5%
-}
-
 .event-preview {
     background-color: var(--fourth-color);
     padding: 3%;
@@ -246,16 +239,22 @@ body {
     margin-top: 5px;
 }
 
+.event-preview:last-child,
+.side-item-menu:last-child {
+    border: 0;
+    margin-bottom: 5%
+}
+
 .contect-list-books {
-    width: 75%;
-    float: left;
+    width: 74%;
+    float: right;
     background-color: var(--fourth-opacity-color);
     margin-top: 30px;
     margin-right: 1%;
-    /* margin-left: 1%; */
     margin-bottom: 15px;
 
 }
+
 
 .title {
     padding: 0px 25px;
@@ -276,10 +275,12 @@ body {
     width: 250px;
     height: 350px;
 }
+
 .flip-card {
     background-color: transparent;
     margin: 5px;
 }
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -288,9 +289,11 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -300,25 +303,30 @@ body {
     /* Safari */
     backface-visibility: hidden;
 }
+
 .flip-card-front {
     /* Style if image is missing */
     background-color: var(--third-opacity-color);
     color: black;
 }
+
 .flip-card-back {
     background-color: var(--primary-color);
     color: black;
     transform: rotateY(180deg);
 
 }
+
 .flip-card-back div {
     padding: 0px 5%;
 }
+
 .flip-card-back h1,
 .flip-card-back p {
     font-size: medium;
 }
-.flip-card-btn{
+
+.flip-card-btn {
     border: none;
     border-radius: 5px;
     display: inline-block;
@@ -330,19 +338,22 @@ body {
     width: 100%;
     font-size: 18px;
 }
-.flip-card-btn:hover{
+
+.flip-card-btn:hover {
     background-color: var(--third-opacity-color);
     color: black;
 }
 
-#best-sellers{
+#best-sellers {
     margin: 3% 0px;
 }
-.div-btn-full-line{
+
+.div-btn-full-line {
     padding: 0px 10px;
     padding-bottom: 20px;
 }
-.btn-full-line{
+
+.btn-full-line {
     border: none;
     border-radius: 5px;
     display: inline-block;
@@ -354,11 +365,15 @@ body {
     width: 100%;
     font-size: 20px;
 }
-.btn-full-line:hover{
+
+.btn-full-line:hover {
     background-color: var(--secondary-color);
     color: var(--fourth-color);
 }
 
+.catalogo{
+    margin-bottom: 15px;
+}
 
 
 
@@ -554,8 +569,20 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .contect-books {
-        justify-content: center;}
+        justify-content: center;
+    }
+    
+    .vertical-bar {
+        float: left; 
+        width: 100%;
+    }
+
+    .contect-list-books {
+        width: 90%;
+        margin-right: 5%;
+    }
 }
 
 @media screen and (max-width:600px) {
