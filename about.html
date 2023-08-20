@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
@@ -28,7 +28,7 @@
 
 <body>
     <nav id="navbar" w3-include-html="navbar-index.html">
-        
+
     </nav>
     <div class="navbar-row shearch-bar">
         <div>
@@ -38,7 +38,134 @@
     </div>
 
     <div id="main-container">
+        <div class="contect-about">
 
+            <button class="tablink" onclick="openContenAbout('history', this, '#8e76b1')" id="defaultOpen">Our History</button>
+            <button class="tablink" onclick="openContenAbout('careers', this, 'var(--third-color)')">Careers & volunteers</button>
+            <button class="tablink" onclick="openContenAbout('whatdo', this, '#5c3099')">What we do</button>
+            <button class="tablink" onclick="openContenAbout('news', this, '#57328b')">News in the library</button>
+
+            <div id="history" class="tabcontent">
+                <div>
+                    <h1>The history of the Fremantle City Library</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <div class="row-imgs">
+                        <div class="colum-img">
+                            <img src="img/library-01.jpg" alt=""> 
+                        </div>
+                        <div class="colum-img">
+                            <img src="img/library-02.jpg" alt=""> 
+                        </div>
+                        <div class="colum-img">
+                            <img src="img/library-04.jpg" alt=""> 
+                        </div>
+                    </div>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                
+            </div>
+            <div id="careers" class="tabcontent">
+                <div>
+                    <h1>Careers</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    
+                    <h1>volunteers</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+            <div id="whatdo" class="tabcontent">
+                <div>
+                    <h1>What we do</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+
+            <div id="news" class="tabcontent">
+                <div class="event-list">
+                    <div class="event">
+                        <h1>Title 1</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                    <div class="event">
+                        <h1>Title 2</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                    <div class="event">
+                        <h1>Title 3</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="vertical-bar">
+            <div id="side-box">
+                <div class="side-title">
+                    <h3>Events</h3>
+                </div>
+                <div id="side-list">
+                    <div class="event-preview">
+                        <h5>Title 1</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout</p>
+                    </div>
+                    <div class="event-preview">
+                        <h5>Title 2</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout</p>
+                    </div>
+                    <div class="event-preview">
+                        <h5>Title 3</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout</p>
+                    </div>
+                </div>
+            </div>
+            <div id="side-box">
+                <div class="side-title">
+                    <h3>My Library</h3>
+                </div>
+                <div id="side-list">
+                    <div class="side-item-menu">
+                        <a href="login.html" title="Login">
+                            <h4>
+                                <i class="fa-solid fa-user"></i>
+                                Login
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="side-item-menu">
+                        <a href="contact.html">
+                            <h4>
+                                <i class="fa-solid fa-circle-question"></i>
+                                Forgot your passware?
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="side-item-menu">
+                        <a href="contact.html">
+                            <h4>
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                Request item
+                            </h4>
+                        </a>
+                    </div>
+                    <div class="side-item-menu">
+                        <a href="contact.html">
+                            <h4>
+                                <i class="fa-solid fa-comment-dots"></i>
+                                Ask a questions
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer id="footerrow" class="footer-row" w3-include-html="footer.html">
@@ -58,6 +185,22 @@
             x.style.display = "block";
         }
     }
+
+    function openContenAbout(type, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(type).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    document.getElementById("defaultOpen").click();
 </script>
 
 </html>

@@ -252,7 +252,6 @@ body {
     margin-top: 30px;
     margin-right: 1%;
     margin-bottom: 15px;
-
 }
 
 
@@ -371,12 +370,82 @@ body {
     color: var(--fourth-color);
 }
 
-.catalogo{
+.catalogo {
     margin-bottom: 15px;
 }
 
+.contect-about {
+    width: 74%;
+    float: right;
+    /* background-color: var(--fourth-opacity-color); */
+    margin-top: 30px;
+    margin-right: 1%;
+    margin-bottom: 15px;
 
+}
 
+.tablink {
+    background-color: var(--primary-color);
+    font-weight: 500;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    height: auto;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+.tabcontent div {
+    margin: 15px;
+}
+
+#history {
+    background-color: #8e76b1;
+}
+
+#careers {
+    background-color: var(--third-color);
+}
+
+#whatdo {
+    background-color: #5c3099;
+}
+
+#news {
+    background-color: #57328b;
+}
+
+.colum-img{
+    margin: 0 5%;
+    display: inline;
+} 
+.colum-img img{
+    width: 250px;
+    height: auto;
+}
+
+.event-list{
+ text-align: left;
+}
+.event{
+    margin: 0 5px;
+    padding: 0 10px;
+    border: solid 1px #8e76b1;
+    border-radius: 5px;
+}
 
 /* Footer */
 .footer-row {
@@ -487,6 +556,9 @@ body {
     .footer-center {
         width: 50%;
     }
+    .tablink {
+        height: 60px;
+    }
 }
 
 @media screen and (min-width:800px) and (max-width: 930px) {
@@ -508,6 +580,10 @@ body {
 
     .footer-center {
         width: 45%;
+    }
+
+    .tablink {
+        height: 80px;
     }
 }
 
@@ -573,15 +649,22 @@ body {
     .contect-books {
         justify-content: center;
     }
-    
+
     .vertical-bar {
-        float: left; 
+        float: left;
         width: 100%;
     }
 
-    .contect-list-books {
+    .contect-list-books,
+    .contect-about {
         width: 90%;
         margin-right: 5%;
+    }
+    .tablink {
+        padding: 14px 16px;
+        font-size: 14px;
+        width: 50%;
+        height: 50px;
     }
 }
 
