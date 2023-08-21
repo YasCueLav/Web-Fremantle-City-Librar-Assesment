@@ -409,6 +409,7 @@ body {
     text-align: center;
     min-height: 655px;
 }
+
 .tabcontent div {
     margin: 2%;
 }
@@ -429,28 +430,98 @@ body {
     background-color: #57328b;
 }
 
-.colum-img{
+.colum-img {
     margin: 0 5%;
     display: inline;
-} 
-.colum-img img{
+}
+
+.colum-img img {
     width: 250px;
     height: auto;
 }
 
-.event-list{
- text-align: left; 
- margin-top: 30px !important;
+.event-list {
+    text-align: left;
+    margin-top: 30px !important;
 }
-.event{
+
+.event {
     margin: 0 5px;
     padding: 0 10px;
     border: solid 1px #8e76b1;
     border-radius: 5px;
 }
-.event h1{
+
+.event h1 {
     margin-bottom: 5px;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style inputs */
+input[type=text], input[type=email], input[type=password], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 5px;
+}
+textarea{
+    height:170px;
+}
+
+.container-about {
+    background-color: var(--fourth-opacity-color);
+    padding: 10px;
+    margin: 2%;
+}
+
+.column-about {
+    float: left;
+    width: 47%;
+    margin-top: 6px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.column-about img {
+    width: 100%;
+}
+
+#title-about{
+text-align: center;
+}
+
+.container-login {
+    background-color: var(--fourth-opacity-color);
+    padding: 10px;
+    margin: 2%;
+}
+
+.column-login {
+    float: left;
+    width: 47%;
+    margin-top: 6px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.column-login img {
+    width: 100%;
+}
+
+#title-login{
+text-align: center;
+}
+
+
+
 
 /* Footer */
 .footer-row {
@@ -561,6 +632,7 @@ body {
     .footer-center {
         width: 50%;
     }
+
     .tablink {
         height: 60px;
     }
@@ -590,7 +662,8 @@ body {
     .tablink {
         height: 80px;
     }
-    .event-list{
+
+    .event-list {
         margin-top: 10% !important;
     }
 }
@@ -668,16 +741,19 @@ body {
         width: 90%;
         margin-right: 5%;
     }
+
     .tablink {
         padding: 14px 16px;
         font-size: 14px;
         width: 50%;
         height: 50px;
     }
+
     .tabcontent {
         padding: 15px !important;
     }
-    .event-list{
+
+    .event-list {
         margin: 0 !important;
         margin-top: 20% !important;
     }
@@ -699,8 +775,15 @@ body {
         padding-top: 25px;
 
     }
-    .event-list{
+
+    .event-list {
         margin-top: 30% !important;
+    }
+
+    .column-about,.column-login,
+    input[type=submit],input[type=text], input[type=password],select, textarea , input[type=email] {
+        width: 95%;
+        margin-top: 0;
     }
 }
 
@@ -732,7 +815,7 @@ body {
         margin: 0;
     }
 
-    .event-list{
+    .event-list {
         margin-top: 40% !important;
     }
 }
