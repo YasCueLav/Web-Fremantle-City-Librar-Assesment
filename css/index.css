@@ -407,9 +407,10 @@ body {
     display: none;
     padding: 50px;
     text-align: center;
+    min-height: 655px;
 }
 .tabcontent div {
-    margin: 15px;
+    margin: 2%;
 }
 
 #history {
@@ -438,13 +439,17 @@ body {
 }
 
 .event-list{
- text-align: left;
+ text-align: left; 
+ margin-top: 30px !important;
 }
 .event{
     margin: 0 5px;
     padding: 0 10px;
     border: solid 1px #8e76b1;
     border-radius: 5px;
+}
+.event h1{
+    margin-bottom: 5px;
 }
 
 /* Footer */
@@ -585,6 +590,9 @@ body {
     .tablink {
         height: 80px;
     }
+    .event-list{
+        margin-top: 10% !important;
+    }
 }
 
 /* Tablets */
@@ -666,6 +674,13 @@ body {
         width: 50%;
         height: 50px;
     }
+    .tabcontent {
+        padding: 15px !important;
+    }
+    .event-list{
+        margin: 0 !important;
+        margin-top: 20% !important;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -683,6 +698,9 @@ body {
     .navbar-right i {
         padding-top: 25px;
 
+    }
+    .event-list{
+        margin-top: 30% !important;
     }
 }
 
@@ -712,5 +730,9 @@ body {
     .footer-center div button {
         width: 100%;
         margin: 0;
+    }
+
+    .event-list{
+        margin-top: 40% !important;
     }
 }
