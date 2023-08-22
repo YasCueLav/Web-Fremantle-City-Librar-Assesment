@@ -482,7 +482,7 @@ textarea {
 }
 
 select {
-    height: 33px;
+    min-height: 33px;
     width: 105%;
     padding: 12px;
     border: 1px solid #ccc;
