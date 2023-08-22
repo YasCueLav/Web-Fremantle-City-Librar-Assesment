@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/site.webmanifest">
-        <!-- Style -->
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <!-- JavaScipt -->
-        <script src="js/index.js"></script>
-        <!-- Icons -->
-        <script src="https://kit.fontawesome.com/2b2d1b35f6.js" crossorigin="anonymous"></script>
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-    
-        <title>Harry Potter Sorcerers Stone - Fremantle City Library</title>
-    </head>
-   
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- JavaScipt -->
+    <script src="js/index.js"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/2b2d1b35f6.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Harry Potter Sorcerers Stone - Fremantle City Library</title>
+</head>
+
 <body>
     <nav id="navbar" w3-include-html="navbar-index.html">
-        
+
     </nav>
     <div class="navbar-row shearch-bar">
         <div>
@@ -36,7 +37,135 @@
     </div>
 
     <div id="main-container">
-BOOK
+        <div class="container">
+            <div id="title">
+                <h2>Harry Potter and The Sorcerers Stone</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="img/books/Harry-Potter-Sorcerers.jpg">
+                </div>
+                <div class="column">
+                    <button class="tablink-book" onclick="openContenBook('summary', this, '#8e76b1')" id="defaultOpen">
+                        Summary</button>
+                    <button class="tablink-book" onclick="openContenBook('reviews', this, 'var(--third-color)')">
+                        Reviews</button>
+
+                    <div id="summary" class="tabcontent-book">
+                        <div id="summary-book">
+                            <h3>Summary</h3>
+                            <p>Harry Potter has no idea how famous he is. That's because he's being raised by his
+                                miserable aunt and uncle who are terrified Harry will learn that he's really a wizard,
+                                just as his parents were. But everything changes when Harry is summoned to attend an
+                                infamous school for wizards, and he begins to discover some clues about his illustrious
+                                birthright. From the surprising way he is greeted by a lovable giant, to the unique
+                                curriculum and colorful faculty at his unusual school, Harry finds himself drawn deep
+                                inside a mystical world he never knew existed and closer to his own noble destiny.</p>
+                        </div>
+                        <div id="data-book">
+                            <p><strong>Author: </strong> J.K. Rowling</p>
+                            <p><strong>Publisher: </strong> Scholastic (1 September 1998)</p>
+                            <p><strong>Language: </strong> English</p>
+                            <p><strong>Hardcover: </strong> 309 pages</p>
+                            <p><strong>ISBN-10: </strong> 0590353403</p>
+                        </div>
+                        <div id="reiting-book">
+                            <span class="heading">User Rating</span>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>4.1 average based on 254 reviews.</p>
+                            <hr>
+
+                            <div class="row">
+                                <div class="side">
+                                    <div>5 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar bar-5"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div>150</div>
+                                </div>
+                                <div class="side">
+                                    <div>4 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar bar-4"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div>63</div>
+                                </div>
+                                <div class="side">
+                                    <div>3 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar bar-3"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div>15</div>
+                                </div>
+                                <div class="side">
+                                    <div>2 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar bar-2"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div>6</div>
+                                </div>
+                                <div class="side">
+                                    <div>1 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar bar-1"></div>
+                                    </div>
+                                </div>
+                                <div class="side right">
+                                    <div>20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reviews" class="tabcontent-book">
+                        <div class="reviews">
+                            <h1>Give your Review </h1>
+                            <form id="form-review" action="">
+                                <label for="nickname">Name or nickname</label>
+                                <input type="text" id="nickname" name="nickname" placeholder="Your name or nickname...">
+                                <label for="mail">Email</label>
+                                <input type="email" id="lmail" name="lmail" placeholder="Your email...">
+                                <label for="rate">Rate our overall services.</label>
+                                <select id="rate">
+                                    <option value="1S"> 1 <span class="fa fa-star checked"></span></option>
+                                    <option value="2S"> 2 <span class="fa fa-star checked"></span></option>
+                                    <option value="3S"> 3 <span class="fa fa-star checked"></span></option>
+                                    <option value="4S"> 4 <span class="fa fa-star checked"></span></option>
+                                    <option value="5S"> 5 <span class="fa fa-star checked"></span></option>
+                                </select>
+                                <label for="opinion">Opinion</label>
+                                <textarea id="opinion" name="opinion" placeholder="Write your opinion..."></textarea>
+                                <button type="submit" value="SubmitReview" class="btn-full-line btn-review">Submit
+                                    Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer id="footerrow" class="footer-row" w3-include-html="footer.html">
@@ -56,6 +185,22 @@ BOOK
             x.style.display = "block";
         }
     }
+
+    function openContenBook(type, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent-book");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink-book");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(type).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    document.getElementById("defaultOpen").click();
 </script>
 
 </html>

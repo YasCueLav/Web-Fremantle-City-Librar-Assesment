@@ -15,11 +15,6 @@ body {
 }
 
 /* MENU */
-/* nav{
-    position:fixed;
-    top: 0;
-} */
-
 .navbar-row {
     background-color: var(--fourth-color);
     overflow: auto;
@@ -384,7 +379,8 @@ body {
 
 }
 
-.tablink {
+.tablink,
+.tablink-book {
     background-color: var(--primary-color);
     font-weight: 500;
     float: left;
@@ -397,7 +393,8 @@ body {
     height: auto;
 }
 
-.tablink:hover {
+.tablink:hover,
+.tablink-book {
     background-color: #777;
 }
 
@@ -414,11 +411,20 @@ body {
     margin: 2%;
 }
 
-#history {
+.tabcontent-book {
+    color: black;
+    display: none;
+    padding: 50px;
+    min-height: 655px;
+}
+
+#history,
+#summary {
     background-color: #8e76b1;
 }
 
-#careers {
+#careers,
+#reviews {
     background-color: var(--third-color);
 }
 
@@ -462,8 +468,10 @@ body {
     clear: both;
 }
 
-/* Style inputs */
-input[type=text], input[type=email], input[type=password], select, textarea{
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -472,17 +480,29 @@ input[type=text], input[type=email], input[type=password], select, textarea{
     resize: vertical;
     border-radius: 5px;
 }
-textarea{
-    height:170px;
+
+select {
+    height: 33px;
+    width: 105%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 5px;
 }
 
-.container-about {
+textarea {
+    height: 170px;
+}
+
+.container {
     background-color: var(--fourth-opacity-color);
     padding: 10px;
     margin: 2%;
 }
 
-.column-about {
+.column {
     float: left;
     width: 47%;
     margin-top: 6px;
@@ -490,35 +510,98 @@ textarea{
     justify-content: center;
 }
 
-.column-about img {
+.column img {
     width: 100%;
 }
 
-#title-about{
-text-align: center;
+#title {
+    text-align: center;
 }
 
-.container-login {
-    background-color: var(--fourth-opacity-color);
-    padding: 10px;
-    margin: 2%;
+#reiting-book {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 5%;
 }
 
-.column-login {
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.side {
     float: left;
-    width: 47%;
-    margin-top: 6px;
-    padding: 10px;
-    justify-content: center;
+    width: 15%;
+    margin-top: 10px;
 }
 
-.column-login img {
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+.right {
+    text-align: right;
+}
+
+.bar-container {
     width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
 }
 
-#title-login{
-text-align: center;
+.bar {
+    height: 18px;
+    background-color: var(--secondary-color);
 }
+
+.bar-5 {
+    width: 60%;
+}
+
+.bar-4 {
+    width: 30%;
+}
+
+.bar-3 {
+    width: 10%;
+}
+
+.bar-2 {
+    width: 4%;
+}
+
+.bar-1 {
+    width: 15%;
+}
+
+.reviews {
+    margin-right: 5%;
+}
+
+.btn-review {
+    background-color: var(--fourth-color);
+    color: #000;
+}
+
+.btn-review:hover {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+
+
+
 
 
 
@@ -636,6 +719,10 @@ text-align: center;
     .tablink {
         height: 60px;
     }
+
+    select {
+        width: 107%;
+    }
 }
 
 @media screen and (min-width:800px) and (max-width: 930px) {
@@ -742,7 +829,8 @@ text-align: center;
         margin-right: 5%;
     }
 
-    .tablink {
+    .tablink,
+    .tablink-book {
         padding: 14px 16px;
         font-size: 14px;
         width: 50%;
@@ -753,9 +841,18 @@ text-align: center;
         padding: 15px !important;
     }
 
+    .tabcontent-book {
+        padding: 15px !important;
+        padding-top: 50px !important;
+    }
+
     .event-list {
         margin: 0 !important;
         margin-top: 20% !important;
+    }
+
+    .column {
+        padding: 5px;
     }
 }
 
@@ -780,10 +877,17 @@ text-align: center;
         margin-top: 30% !important;
     }
 
-    .column-about,.column-login,
-    input[type=submit],input[type=text], input[type=password],select, textarea , input[type=email] {
+    .column,
+    input[type=submit],
+    input[type=text],
+    input[type=password],
+    textarea,
+    input[type=email] {
         width: 95%;
-        margin-top: 0;
+    }
+
+    select {
+        width: 107%;
     }
 }
 
@@ -807,6 +911,10 @@ text-align: center;
     .copyright {
         margin-left: 0;
     }
+
+    select {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:475px) {
@@ -818,4 +926,30 @@ text-align: center;
     .event-list {
         margin-top: 40% !important;
     }
+
+    #reiting-book {
+        padding: 2%;
+    }
+
+    select {
+        width: 103%;
+    }
+}
+
+@media (max-width: 400px) {
+    #reiting-book {
+        border: none;
+        border-top: 1px solid #f1f1f1;
+        border-radius: 0;
+    }
+
+    .side,
+    .middle {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+
 }
