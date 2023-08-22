@@ -43,7 +43,7 @@
             </div>
             <div class="row">
                 <div class="column">
-                    <img src="img/books/Harry-Potter-Sorcerers.jpg">
+                    <img src="img/books/Harry-Potter-Sorcerers.jpg" alt="Cover Harry Potter and The Sorcerers Ston">
                 </div>
                 <div class="column">
                     <button class="tablink-book" onclick="openContenBook('summary', this, '#8e76b1')" id="defaultOpen">
@@ -143,18 +143,18 @@
                     <div id="reviews" class="tabcontent-book">
                         <div class="reviews">
                             <h1>Give your Review </h1>
-                            <form id="form-review" action="">
+                            <form id="form-review" action="/hp-sorcerers-stone.html">
                                 <label for="nickname">Name or nickname</label>
                                 <input type="text" id="nickname" name="nickname" placeholder="Your name or nickname...">
-                                <label for="mail">Email</label>
+                                <label for="lmail">Email</label>
                                 <input type="email" id="lmail" name="lmail" placeholder="Your email...">
                                 <label for="rate">Rate our overall services.</label>
                                 <select id="rate">
-                                    <option value="1S"> 1 <span class="fa fa-star checked"></span></option>
-                                    <option value="2S"> 2 <span class="fa fa-star checked"></span></option>
-                                    <option value="3S"> 3 <span class="fa fa-star checked"></span></option>
-                                    <option value="4S"> 4 <span class="fa fa-star checked"></span></option>
-                                    <option value="5S"> 5 <span class="fa fa-star checked"></span></option>
+                                    <option value="1S"> 1 </option>
+                                    <option value="2S"> 2 </option>
+                                    <option value="3S"> 3 </option>
+                                    <option value="4S"> 4 </option>
+                                    <option value="5S"> 5 </option>
                                 </select>
                                 <label for="opinion">Opinion</label>
                                 <textarea id="opinion" name="opinion" placeholder="Write your opinion..."></textarea>
@@ -172,35 +172,34 @@
 
     </footer>
 
+    <script>
+        includeHTML();
+
+        function showHideMenu() {
+            var x = document.getElementById("menu-small");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function openContenBook(type, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent-book");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink-book");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(type).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
-
-<script>
-    includeHTML();
-
-    function showHideMenu() {
-        var x = document.getElementById("menu-small");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-    function openContenBook(type, elmnt, color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent-book");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink-book");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(type).style.display = "block";
-        elmnt.style.backgroundColor = color;
-
-    }
-    document.getElementById("defaultOpen").click();
-</script>
 
 </html>

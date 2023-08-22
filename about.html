@@ -51,13 +51,13 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                     <div class="row-imgs">
                         <div class="colum-img">
-                            <img src="img/library-01.jpg" alt=""> 
+                            <img src="img/library-01.jpg" alt="library photo book shells"> 
                         </div>
                         <div class="colum-img">
-                            <img src="img/library-02.jpg" alt=""> 
+                            <img src="img/library-02.jpg" alt="library photo chile area"> 
                         </div>
                         <div class="colum-img">
-                            <img src="img/library-04.jpg" alt=""> 
+                            <img src="img/library-04.jpg" alt="library photo book shells focus"> 
                         </div>
                     </div>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
@@ -104,11 +104,11 @@
 
         </div>
         <div class="vertical-bar">
-            <div id="side-box">
+            <div class="side-box">
                 <div class="side-title">
                     <h3>Events</h3>
                 </div>
-                <div id="side-list">
+                <div class="side-list">
                     <div class="event-preview">
                         <h5>Title 1</h5>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a
@@ -129,11 +129,11 @@
                     </div>
                 </div>
             </div>
-            <div id="side-box">
+            <div class="side-box">
                 <div class="side-title">
                     <h3>My Library</h3>
                 </div>
-                <div id="side-list">
+                <div class="side-list">
                     <div class="side-item-menu">
                         <a href="login.html" title="Login">
                             <h4>
@@ -175,35 +175,35 @@
 
     </footer>
 
+
+    <script>
+        includeHTML();
+    
+        function showHideMenu() {
+            var x = document.getElementById("menu-small");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    
+        function openContenAbout(type, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(type).style.display = "block";
+            elmnt.style.backgroundColor = color;
+    
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+    
 </body>
-
-<script>
-    includeHTML();
-
-    function showHideMenu() {
-        var x = document.getElementById("menu-small");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-    function openContenAbout(type, elmnt, color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(type).style.display = "block";
-        elmnt.style.backgroundColor = color;
-
-    }
-    document.getElementById("defaultOpen").click();
-</script>
-
 </html>
