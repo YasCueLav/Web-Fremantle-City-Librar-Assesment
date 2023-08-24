@@ -213,7 +213,7 @@
                 </div>
             </div>
             <div class="div-btn-full-line">
-                <button type="button" class="btn-full-line" onclick="window.location.port='/catalogue.html'">See
+                <button type="button" class="btn-full-line" onclick="printHost()">See
                     more</button>
             </div>
         </div>
@@ -299,6 +299,16 @@
             } else {
                 x.style.display = "block";
             }
+        }
+
+        function printHost(){
+            print (window.locationbar);
+            print (window.location.hash);
+            print (window.location.host);
+            print (window.location.hostname);
+            print (window.location.href);
+            print (window.location.pathname);
+            print (window.location.port);
         }
     </script>
 </body>
