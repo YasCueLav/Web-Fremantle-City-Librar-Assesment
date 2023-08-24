@@ -329,8 +329,9 @@ body {
     background-color: var(--third-color);
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .flip-card-btn:hover {
@@ -356,8 +357,9 @@ body {
     background-color: var(--third-color);
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 98%;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .btn-full-line:hover {
