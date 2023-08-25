@@ -676,7 +676,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.footer-center button {
+.footer-center a {
     font-weight: 500;
     font-size: 20px;
     padding: 5px;
@@ -684,9 +684,10 @@ textarea {
     background-color: var(--fourth-color);
     border: var(--fourth-color) solid 1px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-.footer-center button:hover {
+.footer-center a:hover {
     color: var(--secondary-color);
     border: var(--primary-color) solid 1px;
     background-color: var(--primary-color);
